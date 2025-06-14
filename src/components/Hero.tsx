@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Medium } from "lucide-react";
+import { Github, Linkedin, Book } from "lucide-react";
 
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -58,7 +58,7 @@ export const Hero = () => {
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
-              <Medium className="h-6 w-6" />
+              <Book className="h-6 w-6" />
             </a>
           </div>
         </div>
