@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Medium } from "lucide-react";
 
 export const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -51,6 +51,15 @@ export const Hero = () => {
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="h-6 w-6" />
+            </a>
+            <a
+              href="https://medium.com/@chinmaykapoor2301"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Medium"
+            >
+              <Medium className="h-6 w-6" />
             </a>
           </div>
         </div>
