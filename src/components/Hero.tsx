@@ -53,11 +53,10 @@ export const Hero = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://medium.com/@chinmaykapoor2301"
+              href="https://medium.com/@kapoorchinmay231"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Medium"
             >
               <Medium className="h-6 w-6" />
             </a>
