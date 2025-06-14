@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, BookOpen } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -43,7 +43,7 @@ export const Contact = () => {
                   or just connecting with fellow data scientists and engineers. Feel free to reach out!
                 </p>
                 
-                <div className="flex space-x-4">
+                <div className="flex flex-wrap gap-4 mb-6">
                   <Button asChild>
                     <a href="https://www.linkedin.com/in/chinmay-kapoor-b67344200" target="_blank" rel="noopener noreferrer">
                       <Linkedin className="h-4 w-4 mr-2" />
@@ -56,6 +56,22 @@ export const Contact = () => {
                       GitHub
                     </a>
                   </Button>
+                  <Button variant="outline" asChild>
+                    <a href="https://medium.com/@kapoorchinmay231" target="_blank" rel="noopener noreferrer">
+                      <BookOpen className="h-4 w-4 mr-2" />
+                      Medium Blog
+                    </a>
+                  </Button>
+                </div>
+
+                <div className="flex justify-center mt-8">
+                  <div className="w-64 h-64 rounded-lg overflow-hidden shadow-lg p-4 bg-card">
+                    <img 
+                      src="/lovable-uploads/277b0114-8bb7-4644-ade8-2190d41c3074.png" 
+                      alt="Chinmay Kapoor - Professional Photo"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
                 </div>
               </CardContent>
             </Card>

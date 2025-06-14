@@ -29,18 +29,34 @@ export const About = () => {
               </p>
             </div>
             
-            <div>
-              <h3 className="text-2xl font-semibold mb-4">Education</h3>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold">MEng in Electrical & Computer Engineering</h4>
-                  <p className="text-muted-foreground">University of Victoria • Sep 2021 - Aug 2024</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">BEng in Computer Science</h4>
-                  <p className="text-muted-foreground">Amity University • Aug 2017 - Apr 2021</p>
-                </div>
+            <div className="flex justify-center">
+              <div className="w-80 h-80 rounded-lg overflow-hidden shadow-lg p-4 bg-card">
+                <img 
+                  src="/lovable-uploads/f44426a7-9387-4ef4-847d-c0521ca193c4.png" 
+                  alt="Chinmay Kapoor - Graduation Photo"
+                  className="w-full h-full object-cover rounded-lg"
+                />
               </div>
+            </div>
+          </div>
+
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold mb-6">Education</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-lg mb-2">MEng in Electrical & Computer Engineering</h4>
+                  <p className="text-muted-foreground">University of Victoria</p>
+                  <p className="text-sm text-muted-foreground">Sep 2021 - Aug 2024</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-lg mb-2">BEng in Computer Science</h4>
+                  <p className="text-muted-foreground">Amity University</p>
+                  <p className="text-sm text-muted-foreground">Aug 2017 - Apr 2021</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
