@@ -1,76 +1,55 @@
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, ArrowRight, FileText, BookOpen } from "lucide-react";
 
 export const About = () => {
-  const skills = {
-    "Tools": "Azure (DataFactory, ADLS2, Synapse, Databricks), Git, Fabric (Onelake, PowerBI, Key Vault), Kubernetes (GKE, AKS), Docker (ACI, GCS), Tableau, PydanticAI, AWS (S3, Boto3, Sagemaker, EC2), MongoDB, Kafka, LangChain, Qdrant",
-    "Technical": "Python, SQL/NoSQL, DAX, Pandas, Flask, PySpark, Terraform, TensorFlow, Pytorch, llama.cpp, FastAPI",
-    "Data Modeling": "Star, Snowflake, CosmosDB, Kimball, SSMS, SSIS, Semantic Modeling, KPI Analysis, Validation, Grafana"
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
-    <section id="about" className="py-20 bg-muted/30">
+    <section id="about" className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
-        
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div>
-              <h3 className="text-2xl font-semibold mb-4">Background</h3>
-              <p className="text-muted-foreground mb-4">
-                I'm a Data Scientist and ML Engineer with a Master's in Electrical & Computer Engineering 
-                from the University of Victoria. Currently working at Swiss Vault Global, I specialize in 
-                AI-driven hybrid storage solutions and data engineering.
-              </p>
-              <p className="text-muted-foreground">
-                My expertise spans from building LLM-powered applications to designing scalable data 
-                pipelines and implementing edge AI solutions. I'm passionate about bridging the gap 
-                between technical innovation and business value.
-              </p>
-            </div>
-            
-            <div className="flex justify-center">
-              <div className="w-80 h-80 rounded-lg overflow-hidden shadow-lg p-4 bg-card">
-                <img 
-                  src="/lovable-uploads/f44426a7-9387-4ef4-847d-c0521ca193c4.png" 
-                  alt="Chinmay Kapoor - Graduation Photo"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
+        <div className="grid md:grid-cols-3 gap-8 items-center">
+          <div className="md:col-span-1">
+            <div className="w-64 h-64 mx-auto rounded-lg overflow-hidden shadow-lg p-4 bg-card">
+              <img 
+                src="/lovable-uploads/f44426a7-9387-4ef4-847d-c0521ca193c4.png" 
+                alt="Chinmay Kapoor"
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
           </div>
-
-          <div className="mb-12">
-            <h3 className="text-2xl font-semibold mb-6">Education</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-lg mb-2">MEng in Electrical & Computer Engineering</h4>
-                  <p className="text-muted-foreground">University of Victoria</p>
-                  <p className="text-sm text-muted-foreground">Sep 2021 - Aug 2024</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-lg mb-2">BEng in Computer Science</h4>
-                  <p className="text-muted-foreground">Amity University</p>
-                  <p className="text-sm text-muted-foreground">Aug 2017 - Apr 2021</p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-2xl font-semibold mb-6">Technical Skills</h3>
-            <div className="grid gap-4">
-              {Object.entries(skills).map(([category, skillList]) => (
-                <Card key={category}>
-                  <CardContent className="p-4">
-                    <h4 className="font-semibold mb-2">{category}</h4>
-                    <p className="text-sm text-muted-foreground">{skillList}</p>
-                  </CardContent>
-                </Card>
-              ))}
+          <div className="md:col-span-2">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+            <p className="text-muted-foreground mb-6">
+              A passionate Data Scientist with a Master's in Electrical & Computer Engineering from the University of Victoria and a Bachelor's in Computer Science. I specialize in leveraging data to drive business insights and build intelligent systems. With experience across the full data lifecycle from ingestion and modeling to deployment and visualization, I thrive on solving complex problems and continuously learning new technologies. My background spans cloud platforms like Azure and AWS, big data technologies like Spark, and cutting-edge machine learning and LLM applications.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button onClick={() => scrollToSection("projects")}>
+                View My Work <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+              <Button variant="outline" onClick={() => scrollToSection("contact")}>
+                Get In Touch
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://www.linkedin.com/in/chinmay-kapoor-b67344200" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://github.com/chinmay231" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Github className="h-5 w-5" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://medium.com/@kapoorchinmay231" target="_blank" rel="noopener noreferrer" aria-label="Medium Blog">
+                  <BookOpen className="h-5 w-5" />
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -78,3 +57,4 @@ export const About = () => {
     </section>
   );
 };
+
