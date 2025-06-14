@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Github, Linkedin, Mail, MapPin, Phone, BookOpen, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Book, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export const Contact = () => {
@@ -31,17 +31,14 @@ export const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Create mailto link with form data
       const subject = encodeURIComponent(formData.subject || "Contact from Portfolio Website");
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
       const mailtoLink = `mailto:chinmaykapoor2301@gmail.com?subject=${subject}&body=${body}`;
-      
-      // Open default email client
+
       window.location.href = mailtoLink;
-      
-      // Reset form
+
       setFormData({
         name: "",
         email: "",
@@ -68,27 +65,50 @@ export const Contact = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h2>
-        
+
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <span>Vancouver, BC</span>
+              <CardContent className="space-y-6">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    <span>Vancouver, BC</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-5 w-5 text-primary" />
+                    <span>250-986-5497</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="h-5 w-5 text-primary" />
+                    <a href="mailto:chinmaykapoor2301@gmail.com" className="hover:text-primary transition-colors">
+                      chinmaykapoor2301@gmail.com
+                    </a>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-primary" />
-                  <span>250-986-5497</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-primary" />
-                  <a href="mailto:chinmaykapoor2301@gmail.com" className="hover:text-primary transition-colors">
-                    chinmaykapoor2301@gmail.com
-                  </a>
+                {/* Social Buttons Row, styled large horizontally */}
+                <div className="flex justify-center flex-wrap gap-4 pt-2">
+                  <Button asChild size="lg">
+                    <a href="https://www.linkedin.com/in/chinmay-kapoor-b67344200" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="h-4 w-4 mr-2" />
+                      LinkedIn
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild size="lg">
+                    <a href="https://github.com/chinmay231" target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2" />
+                      GitHub
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild size="lg">
+                    <a href="https://medium.com/@kapoorchinmay231" target="_blank" rel="noopener noreferrer">
+                      <Book className="h-4 w-4 mr-2" />
+                      Medium Blog
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -160,27 +180,8 @@ export const Contact = () => {
               I'm always interested in discussing new opportunities, collaborations, 
               or just connecting with fellow data scientists and engineers. Feel free to reach out!
             </p>
-            
-            <div className="flex justify-center flex-wrap gap-4 mb-8">
-              <Button asChild>
-                <a href="https://www.linkedin.com/in/chinmay-kapoor-b67344200" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="h-4 w-4 mr-2" />
-                  LinkedIn
-                </a>
-              </Button>
-              <Button variant="outline" asChild>
-                <a href="https://github.com/chinmay231" target="_blank" rel="noopener noreferrer">
-                  <Github className="h-4 w-4 mr-2" />
-                  GitHub
-                </a>
-              </Button>
-              <Button variant="outline" asChild>
-                <a href="https://medium.com/@kapoorchinmay231" target="_blank" rel="noopener noreferrer">
-                  <BookOpen className="h-4 w-4 mr-2" />
-                  Medium Blog
-                </a>
-              </Button>
-            </div>
+
+            {/* Removed duplicated social buttons from here */}
 
             <div className="flex justify-center">
               <div className="w-64 h-64 rounded-lg overflow-hidden shadow-lg p-4 bg-card">
