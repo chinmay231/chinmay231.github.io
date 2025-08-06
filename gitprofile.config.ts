@@ -84,7 +84,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://github.com/chinmay231/chinmay231.github.io/blob/main/AI7_25.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'AI7_25.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Python',
