@@ -169,9 +169,9 @@ const CONFIG = {
     {
       title: 'FUSTT: Forecasting using Spatio-Temporal Transformers for Blue Carbon Ecosystems',
       conferenceName: 'Springer(Accepted)',
-      journalName: '',
+      journalName: 'Awaiting Publication',
       authors: 'Chinmay Kapoor, Navneet Kaur Popli',
-      link: 'Awaiting Publication',
+      link: 'https://github.com/chinmay231/FUSTT',
       description:
         'Developed a novel approach utilizing flagged and dual-stage encoder systems in Spatio-Temporal Transformers to predict long-term sequences of required conditions for sustainable Blue Carbon Ecosystems.',
     },
