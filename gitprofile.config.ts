@@ -35,26 +35,26 @@ const CONFIG = {
         {
           title: 'Compio-Benchmarker',
           description:
-            'A benchmarking tool for evaluating performance of LLM pipeline for real-world use-case on hybrid/cloud/on-prem architectures.',
+            'A benchmarking tool for evaluating performance of LLM pipeline for real-world use-case on hybrid/cloud/on-prem architectures. The same COMPIO above is involved in a pipeline to test integration of system architecture and data pipelines.',
           imageUrl:
             '',
-          link: '',
+          link: 'https://medium.com/@kapoorchinmay231/compio-company-integrated-overview-e3e8638566d5',
         },
         {
           title: 'SVSI-Swiss Vault Storage Intelligence',
           description:
-            'Llama3.2 8B on-prem hosted powering RAG solution to interact with VaultFS (proprietary file system) stored files',
+            'Llama3.2 8B on-prem hosted powering RAG solution to interact with VaultFS (proprietary file system) stored files. Given its proprietary nature as product of Swiss Vault, I can not showcase it, but feel free to reach out at chinmay.kapoor@swissvault.io for a demo.',
           imageUrl:
             '',
-          link: '',
+          link: 'https://github.com/chinmay231',
         },
         {
           title: 'Imagilect',
           description:
-            'Real-time LPR on streaming video feed during vaultFS storage for tracking highway vehicle frequency.',
+            'Real-time LPR on streaming video feed during file system storage for tracking highway vehicle frequency. (Independent Project for Client)',
           imageUrl:
             '',
-          link: '',
+          link: 'https://github.com/chinmay231',
         },
       ],
     },
