@@ -129,10 +129,17 @@ const CONFIG = {
   ],
   experiences: [
     {
+      company: 'Mimik',
+      position: 'Field Application Engineer - AI',
+      from: 'October 2025',
+      to: 'Present',
+      companyLink: 'https://mimik.com',
+    },
+    {
       company: 'SwissVault GmbH',
       position: 'Data & AI Engineer',
       from: 'January 2024',
-      to: 'Present',
+      to: 'October 2025',
       companyLink: 'https://swissvault.io',
     },
     {
@@ -168,8 +175,8 @@ const CONFIG = {
   publications: [
     {
       title: 'FUSTT: Forecasting using Spatio-Temporal Transformers for Blue Carbon Ecosystems',
-      conferenceName: 'Springer(Accepted)',
-      journalName: 'Awaiting Publication',
+      conferenceName: 'IEEE-JSTARS',
+      journalName: 'Accepted',
       authors: 'Chinmay Kapoor, Navneet Kaur Popli',
       link: 'https://github.com/chinmay231/FUSTT',
       description:
