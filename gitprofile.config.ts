@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['chinmay231/Compio','chinmay231/Stock-Prediction','chinmay231/FUSTT','chinmay231/Fraud_detection_ML'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['chinmay231/Compio','chinmay231/CodeManager','chinmay231/FUSTT','chinmay231/Fraud_detection_ML'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
