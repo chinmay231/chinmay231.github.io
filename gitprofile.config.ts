@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['chinmay231/healthtracker','chinmay231/Konvertex','chinmay231/FUSTT','chinmay231/Fraud_detection_ML','chinmay231/remote-control'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['chinmay231/healthtracker','chinmay231/Konvertex','chinmay231/FUSTT','chinmay231/Fraud_detection_ML','chinmay231/remote-control','chinmay231/CodeManager'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -54,7 +54,7 @@ const CONFIG = {
             'Real-time LPR on streaming video feed during file system storage for tracking highway vehicle frequency. (Independent Project for Client)',
           imageUrl:
             '',
-          link: 'https://github.com/chinmay231',
+          link: 'https://github.com/chinmay231/LPR_Detection',
         },
       ],
     },
@@ -147,7 +147,7 @@ const CONFIG = {
       position: 'Research Assistant (ML Team Lead)',
       from: 'January 2022',
       to: 'August 2024',
-      companyLink: 'https://www.linkedin.com/company/solids-lab/about/',
+      companyLink: 'https://www.linkedin.com/company/solids-lab',
     },
     {
       company: 'United Lex LPO',
@@ -178,9 +178,9 @@ const CONFIG = {
       conferenceName: 'IEEE-JSTARS',
       journalName: 'Accepted',
       authors: 'Chinmay Kapoor, Navneet Kaur Popli',
-      link: 'https://github.com/chinmay231/FUSTT',
+      link: 'https://nrc-publications.canada.ca/eng/view/object/?id=b6e13850-2fad-4a9a-bc92-f22e16f8b226',
       description:
-        'Developed a novel approach utilizing flagged and dual-stage encoder systems in Spatio-Temporal Transformers to predict long-term sequences of required conditions for sustainable Blue Carbon Ecosystems.',
+        'Published and developed a novel approach utilizing flagged and dual-stage encoder systems in Spatio-Temporal Transformers to predict long-term Time-series Forecasting sequences of required conditions for sustainable Blue Carbon Ecosystems.',
     },
     {
       title: 'Concrete Characteristics Evaluation using ML to reduce carbon emissions in production',
