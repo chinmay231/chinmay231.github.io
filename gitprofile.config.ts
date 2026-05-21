@@ -74,7 +74,7 @@ const CONFIG = {
     dribbble: '',
     behance: '',
     medium: 'kapoorchinmay231',
-    dev: 'https://chinmay231.github.io/',
+    website: 'https://chinmay231.github.io/',
     stackoverflow: '', // example: '1/jeff-atwood'
     discord: '',
     telegram: '',
