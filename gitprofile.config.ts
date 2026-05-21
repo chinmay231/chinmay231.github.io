@@ -74,17 +74,17 @@ const CONFIG = {
     dribbble: '',
     behance: '',
     medium: 'kapoorchinmay231',
-    dev: '',
+    dev: 'https://chinmay231.github.io/',
     stackoverflow: '', // example: '1/jeff-atwood'
     discord: '',
     telegram: '',
-    website: 'https://chinmay231.github.io/',
+    website:'https://chynj.ca/',
     phone: '',
     email: 'chinmaykapoor2301@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://raw.githubusercontent.com/chinmay231/chinmay231.github.io/main/DS56.pdf', // Empty fileUrl will hide the `Download Resume` button : https://github.com/chinmay231/chinmay231.github.io/blob/main/DS56.pdf
+      'https://raw.githubusercontent.com/chinmay231/chinmay231.github.io/main/universal.pdf', // Empty fileUrl will hide the `Download Resume` button : https://github.com/chinmay231/chinmay231.github.io/blob/main/DS56.pdf
   },
   skills: [
     'Python',
